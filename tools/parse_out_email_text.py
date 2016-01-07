@@ -39,7 +39,7 @@ def parseOutText(f):
         ### space between each stemmed word)
         
         # get the stemmer
-        stemmer = SnowballStemmer("english", ignore_stopwords=True)
+        stemmer = SnowballStemmer("english")
         text_string = text_string.split()
         for word in text_string:
             words += stemmer.stem(word) + " "
